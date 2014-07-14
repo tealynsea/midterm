@@ -1,0 +1,29 @@
+.container-fluid {
+
+	background-color: #505050;
+	height: 300px;
+}
+
+.schoolName {
+
+	color: white;
+}
+
+.dropdown {
+
+	position: relative;
+}
+
+.input-group {
+	width: 500px;
+}
+
+img {
+	width: 150px;
+	height: 150px;
+}
+
+iframe {
+
+	float: right;
+}
