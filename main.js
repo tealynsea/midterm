@@ -16,8 +16,6 @@ studentList.push({
 	startDate: '7/3/14'
 });
 
- 
-
 var renderList=function() {
 
 	$('#studentList').empty();
@@ -30,22 +28,22 @@ var renderList=function() {
 		
 
 		//creates row of "Dropdown(link) "
-		var newListItem = $('<li></li>');
+		var newListItem = $('<li>');
 
-		newListItem.append('<h4>' + studentList[i].firstName + ", " + studentList[i].lastInitial + "Start Date:  " + studentList[i].startDate);
+		newListItem.append('<h4>' + studentList[i].firstName  + ", " + studentList[i].lastInitial + "Start Date:  " + studentList[i].startDate + '<h4>');
 
 		console.log(newListItem);
 
 
-		//var actionsContainer = $('<div class="actions">');
+		var actionsContainer = $('<div class="actions">');
 
-		//actionsContainer.appendTo(newListItem);
+		actionsContainer.appendTo(newListItem);
 
-		newListItem.prependTo('#studentRoster');
+		newListItem.prependTo('#studentList');
 
 		studentList[i].display = newListItem;
 
-		//newListItem.data('listIndex', i);
+		newListItem.data('listIndex', i);
 	};
 };
 
@@ -62,3 +60,8 @@ $(document).on('ready', function() {
 renderList();
 
 });
+
+
+ 
+
+
