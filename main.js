@@ -5,14 +5,18 @@ var studentList = [];
 studentList.push({
 
 	firstName: 'Smiley',
-	lastInitial: 'D.'
+	lastInitial: 'D.',
+	startDate: '7/1/14'
 });
 
 studentList.push({
 
 	firstName: 'Dopey',
-	lastInitial: 'F.'
+	lastInitial: 'D.',
+	startDate: '7/3/14'
 });
+
+ 
 
 var renderList=function() {
 
@@ -28,7 +32,7 @@ var renderList=function() {
 		//creates row of "Dropdown(link) "
 		var newListItem = $('<li></li>');
 
-		newListItem.append('<h6>' + studentList[i].firstName + ", " + studentList[i].lastInitial);
+		newListItem.append('<h4>' + studentList[i].firstName + ", " + studentList[i].lastInitial + "Start Date:  " + studentList[i].startDate);
 
 		console.log(newListItem);
 
@@ -37,7 +41,7 @@ var renderList=function() {
 
 		//actionsContainer.appendTo(newListItem);
 
-		newListItem.prependTo('#studentList');
+		newListItem.prependTo('#studentRoster');
 
 		studentList[i].display = newListItem;
 
