@@ -65,10 +65,16 @@ var renderList=function() {
 		//creates an new element in the DOM; hopefully the dropdown
 		
 
-		//creates row of "Dropdown(link) "
+		 
 		var newListItem = $('<li class="roster">');
 
-		newListItem.append('<h4 id="onStudentList">' + studentList[i].firstName  + ", " + studentList[i].lastInitial + "&nbsp;&nbsp;&nbsp;&nbsp;Start Date:  " + studentList[i].startDate + '<h4>');
+		/*var newListItem = {
+
+				newList: $('<li>', {class: 'listItem', id: 'new-list'}),
+				newAnchor: $('<a>', {class: 'link', id: 'newAnchor'})
+		}*/
+
+		newListItem.append('<h4 id="onStudentList"><a href="studentpage.html">' + studentList[i].firstName  + ", " + studentList[i].lastInitial + "&nbsp;&nbsp;&nbsp;&nbsp;Start Date:  " + studentList[i].startDate + '</a></h4>');
 
 		console.log(newListItem);
 
