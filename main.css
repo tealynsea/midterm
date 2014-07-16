@@ -46,19 +46,35 @@ iframe {
 	float: right;
 }
 
-#studentRoster {
+.studentBox {
 
 	border: 2px solid black;
 	height: 300px;
-	width: 300px;
+	width: 500px;
 	margin-left: 25px;
 	margin-top: 25px;
 	list-style: none;
 	padding-left: 10px;
+	height: auto;
+	display: inline-block;
 	
 }
 
- 
+.form-group {
+
+	width: 400px;
+
+}
+
+#first-name {
+
+	margin-top: 30px;
+}
+
+#last-name {
+
+
+}
 
  
 

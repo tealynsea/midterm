@@ -1,11 +1,11 @@
-/*
+
 var studentList = [];
 
 //put a few students into array
 studentList.push({
 
 	firstName: 'Smiley',
-	lastInitial: 'D.',
+	lastInitial: 'A.',
 	startDate: '7/1/14'
 });
 
@@ -16,9 +16,47 @@ studentList.push({
 	startDate: '7/3/14'
 });
 
+studentList.push({
+
+	firstName: 'Sneaky',
+	lastInitial: 'F.',
+	startDate: '7/10/14'
+});
+
+studentList.push({
+
+	firstName: 'Grumpy',
+	lastInitial: 'B.',
+	startDate: '6/25/14'
+});
+
+studentList.push({
+
+	firstName: 'Grumpy',
+	lastInitial: 'S.',
+	startDate: '1/14/14'
+});
+
+studentList.push({
+
+	firstName: 'Jerky',
+	lastInitial: 'Y.',
+	startDate: '1/14/14'
+});
+
+studentList.push({
+
+	firstName: 'Sneezy',
+	lastInitial: 'C.',
+	startDate: '1/14/14'
+});
+
+
+
+
 var renderList=function() {
 
-	$('#studentList').empty();
+	$('#studentRoster').empty();
 
 
 //Loop through each student in studentList array
@@ -28,9 +66,9 @@ var renderList=function() {
 		
 
 		//creates row of "Dropdown(link) "
-		var newListItem = $('<li>');
+		var newListItem = $('<li class="roster">');
 
-		newListItem.append('<h4>' + studentList[i].firstName  + ", " + studentList[i].lastInitial + "Start Date:  " + studentList[i].startDate + '<h4>');
+		newListItem.append('<h4 id="onStudentList">' + studentList[i].firstName  + ", " + studentList[i].lastInitial + "&nbsp;&nbsp;&nbsp;&nbsp;Start Date:  " + studentList[i].startDate + '<h4>');
 
 		console.log(newListItem);
 
@@ -39,7 +77,7 @@ var renderList=function() {
 
 		actionsContainer.appendTo(newListItem);
 
-		newListItem.prependTo('#studentList');
+		newListItem.prependTo('#studentRoster');
 
 		studentList[i].display = newListItem;
 
@@ -47,6 +85,37 @@ var renderList=function() {
 	};
 };
 
+var newStudentAdd = function(eventArguments) {
+
+	eventArguments.preventDefault();
+
+	var firstNameField= $(this).find('[name = first]');
+	var lastInitField = $(this).find('[name = lastInit]');
+	var startField = $(this).find('[name = start]');
+
+	var newName = firstNameField.val();
+		 
+	var newInit = lastInitField.val();
+	var newStart = startField.val();
+
+	var newStudentList = {
+
+		firstName: newName,
+		lastInitial: newInit,
+		startDate: newStart
+	};
+
+	studentList.push(newStudentList);
+
+	renderList();
+
+	firstNameField.val('');
+	lastInitField.val('');
+	startField.val('');
+
+
+
+}
 
 
 
@@ -59,10 +128,12 @@ $(document).on('ready', function() {
  
 renderList();
 
-});*/
+$('#new-student').on('submit', newStudentAdd);
+
+});
 
 
-var randomLoc = Math.floor(Math.random() * 5);
+/*var randomLoc = Math.floor(Math.random() * 5);
 var loc1 = randomLoc;
 var loc2 = loc1 + 1;
 var loc3 = loc2 + 1;
@@ -116,7 +187,7 @@ while (isSunk == false) {
 
 var stats = "You took " + guesses + " guesses to sink the battleship, " + "which means your accuracy was " + (3/guesses * 100 + "%");
 
-alert(stats);
+alert(stats);*/
 
 
 

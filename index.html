@@ -51,35 +51,61 @@
 </div>
 
 
-
-<!--	Not really working; just puts dropdown with caret
-  <form class="navbar-form navbar-left" role="search">
-  		<div class="form-group">
-    		<input type="text" class="form-control" placeholder="Search">
- 		 </div>
-  		<button type="submit" class="btn btn-default">Submit</button>
-	</form>-->
-
-
-
-<!-- Puts a calendar from google calendar
-  <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tealynsea%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FDenver" style=" border-width:0 " width="600" height="400" frameborder="0" scrolling="no"></iframe> -->
- 	 
-<!-- works!!! Uses little bootstrap and isn't fixed-position.  re-wrote code line 15
-<div class="container">
-  <header class="page-header">
-    <ul class="nav nav-pills pull-left">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Communicate with Staff</a></li>
-    </ul>
-  <header>
-</div> -->
-
  
+  <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=tealynsea%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FDenver" style=" border-width:0 " width="600" height="400" frameborder="0" scrolling="no"></iframe>  
+ 	 
+<!--<h1>Play Battleship!</h1>-->  
 
- <h1>Play Battleship!</h1>  
+<!-- Place to display student list -->
 
+
+<div class="studentBox">
+
+  <!-- Just checking out what this does
+  <input type="text" class="form-control" placeholder="First Name">
+  <input type="text" class="form-control" placeholder="Last INITIAL">
+  <input type="text" class="form-control" placeholder="Start Date">-->
+    <ul id="studentRoster">
+  
+    </ul>
+
+    
+<form class="form-vertical"  id="new-student" role="form">
+  <div class="form-group"> 
+    <div class="col-sm-12">
+      <input type="text" name="first" class="form-control" id="first-name" placeholder="First Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12">
+      <input type="text" name="lastInit"class="form-control" id="last-name" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-12">
+      <input type="text" name="start" class="form-control" id="start-date" placeholder="Start Date">
+    </div>
+  </div>
+  <!--<div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> Remember me
+        </label>
+      </div>
+    </div>
+  </div> -->
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Add new student</button>
+    </div>
+  </div>
+</form>
+
+
+
+
+</div>
 
    
  
