@@ -2,6 +2,7 @@
 
 var weeklyGoal = [];
 
+<<<<<<< HEAD
 weeklyGoal.push({
 
 	goal1: 'Be nice to Teri!',
@@ -9,6 +10,15 @@ weeklyGoal.push({
 	step2: 'Say, "Yoda is my favorite Jedi."',
 	step3: 'Bring her a Pepsi'
 });
+=======
+/*weeklyGoal.push({
+
+	goal1: 'Be on time',
+	step1: 'Set Alarm',
+	step2: 'Lay out clothes',
+	step3: 'Ask Mom for help'
+});*/
+>>>>>>> d19c7de91fd44a10c356596ba6a3821b291f57d7
 
 
 
@@ -77,4 +87,19 @@ renderList();
 $('#newAdded').on('submit', newGoalAdd);
 
 
+<<<<<<< HEAD
 });
+=======
+});
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> d19c7de91fd44a10c356596ba6a3821b291f57d7
