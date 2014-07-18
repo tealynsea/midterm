@@ -10,7 +10,8 @@
 </head>
 <body>
 
-<div class="navbar navbar-inverse navbar-fixed-top">
+
+<div class="navbar navbar-inverse navbar-fixed-bottom">
     <div class="container">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="icon-bar"></span>
@@ -30,32 +31,44 @@
                 <ul class="dropdown-menu">
                   <li><a href="12stepInfo.html">12 Step Info.</a></li>
                   <li><a href="levelpapers.html">Level Papers</a></li>
-                </ul> <!-- end of ul dropdown-menu -->
-              </li> <!-- end of li dropdown -->
+                </ul> 
+              </li> 
               <li class="dropdown " >
                 <a data-toggle="dropdown" data-target="#">Need A Moment?<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="battleship.html">Play Battleship!</a></li>
                    
-                </ul> <!-- end of ul dropdown-menu -->
-              </li> <!-- end of li dropdown -->
-            <li><a href="#"><span class="glyphicon glyphicon-envelope"> Talk to Us!</a></li>
+                </ul> 
+              </li> 
+            <li><a href="talktous.html"><span class="glyphicon glyphicon-envelope"> Talk to Us!</a></li>
           </ul>
         </div>
     </div>
 
-  </div>
+  </div> 
 
 <!-- End Navbar -->
  
 
   
-<img src="http://trendspig.com/static/8e537935325903eab2501b718e70a8b4.gif" id="bg" alt="">
-<div class="table-responsive" id="board">
+<div id="board">
+ 
     <div id="messageArea"></div>
 
-    <table class="table">
+    <table>
       <tr>
+        <th></th>
+        <th>00</th>
+        <th>01</th>
+        <th>02</th>
+        <th>03</th>
+        <th>04</th>
+        <th>05</th>
+        <th>06</th>
+
+      </tr>
+      <tr>
+        <td id="A">A</td>
         <td id="00"></td>
         <td id="01"></td>
         <td id="02"></td>
@@ -67,6 +80,7 @@
       </tr>
 
       <tr>
+        <td id="B">B</td>
         <td id="10"></td>
         <td id="11"></td>
         <td id="12"></td>
@@ -74,10 +88,12 @@
         <td id="14"></td>
         <td id="15"></td>
         <td id="16"></td>
+
         
       </tr>
 
       <tr>
+        <td id="C">C</td>
         <td id="20"></td>
         <td id="21"></td>
         <td id="22"></td>
@@ -88,6 +104,7 @@
       </tr>
 
        <tr>
+        <td id="D">D</td>
         <td id="30"></td>
         <td id="31"></td>
         <td id="32"></td>
@@ -98,6 +115,7 @@
       </tr>
 
       <tr>
+        <td id="E">E</td>
         <td id="40"></td>
         <td id="41"></td>
         <td id="42"></td>
@@ -108,6 +126,7 @@
       </tr>
 
       <tr>
+        <td id="F">F</td>
         <td id="50"></td>
         <td id="51"></td>
         <td id="52"></td>
@@ -118,6 +137,7 @@
       </tr>
 
       <tr>
+        <td id="G">G</td>
         <td id="60"></td>
         <td id="61"></td>
         <td id="62"></td>
@@ -127,13 +147,16 @@
         <td id="66"></td>
       </tr>
 
+      <tr>
+
+
     </table>
 
-    <form role="form">
-      <div class="form-group">
-        <label for="guessInput"></label>
-        <input type="button" class="form-control" id="guessInput" placeholder="enter A0">
-      </div>
+    <form>
+
+      <input type="text" id="guessInput" placeholder="A0">
+      <input type="button" id="fireButton" value="Fire!"> 
+
     </form>
 
 </div>

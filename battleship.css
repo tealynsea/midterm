@@ -1,26 +1,85 @@
 body {
 
 	background-color: black;
+	padding: 70px;
 }
 
-#bg {
-	position: fixed;
-	top: 0;
-	left: 0;
-	min-width: 100%;
-	min-height: 100%;
-}
+
 
 div #board {
 
 	position: relative;
 	width: 1024px;
 	height: 863px;
-	margin: auto;
-	/*background: url("http://trendspig.com/static/8e537935325903eab2501b718e70a8b4.gif") no repeat;*/
+	margin-bottom:  30px;
+	/*background: url("/users/macowner/projects/midterm/board.jpg") no repeat;*/
 }
 
-.table tr td{
-	border: 1px solid black;
+div #messageArea {
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	color: rgb(83, 175, 19);
+
 }
 
+table {
+	position: absolute;
+	left: 173px;
+	top: 0px;
+	border-spacing: 0px;
+} 
+
+td {
+	width: 94px;
+	height: 94px;
+	border: 1px solid rgb(83, 175, 19);
+	color: red;
+
+}
+
+th {
+
+	color: red;
+}
+
+form {
+	position: absolute;
+	bottom: 55px;
+	right: 0px;
+	padding: 15px;
+	background-color: rgb(83, 175, 19);
+}
+
+form input {
+	background-color: rgb(152, 207, 113);
+	border-color: rgb(83, 175, 19);
+	font-size: 1 em;
+}
+
+.hit {
+
+	background-image: url("http://etc-mysitemyway.s3.amazonaws.com/icons/legacy-previews/icons-256/green-jelly-icons-symbols-shapes/019270-green-jelly-icon-symbols-shapes-shapes-circle.png");
+	background-size: 100% 100%;
+}
+
+.miss {
+
+	background-image: url("http://connectedloop.com/images/redX250x250.gif");
+	background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

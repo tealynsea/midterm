@@ -75,6 +75,37 @@ iframe {
 
 
 }
+/* CSS for student page */
+#goalBorder {
+
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+#goalBox {
+
+	border: 1px solid black;
+	border-radius: 8px;
+}
+
+#weekly-goals {
+
+	list-style: none;
+}
+
+#goal-input {
+
+	margin-left: 27px;
+}
+
+#dailyCheckIn {
+
+	border: 1px solid black;
+	border-radius: 8px;
+	margin-top: -412px;
+
+}
+
 
  
 

@@ -5,7 +5,8 @@
   <title>Charm School</title>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
    
-  <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" type="text/css" href="studentpage.css">
+  <link rel="stylesheet" type="text/css" href="main.css"> 
 
 </head>
 <body>
@@ -24,14 +25,14 @@
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.html">Home</a></li>
            
-              <li class="dropdown " >
+              <li class="dropdown">
                 <a data-toggle="dropdown" data-target="#">Resources<b class="caret"></b></a>
                 <ul class="dropdown-menu">
                   <li><a href="12stepInfo.html">12 Step Info.</a></li>
                   <li><a href="levelpapers.html">Level Papers</a></li>
                 </ul>
               </li>
-            <li><a href="#">Talk to Us!</a></li>
+            <li><a href="talktous.html">Talk to Us!</a></li>
           </ul>
         </div>
     </div>
@@ -41,15 +42,72 @@
 
 <div class="container-fluid" id="heading">
 
-	 <h1 class="schoolName">Charm School</h1>
+   <h1 class="schoolName">Charm School</h1>
     <a class="navbar-brand" href="/"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTADvl8XDDBDS5ieaxyiySgOU07-iIf3DlUod-oOZw9nsvNtj6yLg" alt="coat of arms" alt="charm school coat of arms"></a>
+
+</div>
+
+
+<div class="container-fluid" >
+     
+     <div class="row">
+        <div class="col-md-4" id = "goalBox"> 
+            <h2>Weekly Goals</h2>
+          <ul id="weekly-goals">
+          </ul>
+
+          <form class="form-vertical "  id="newAdded" role="form">
+            <div class="form-group" id="goal-input"> 
+              <div class="col-sm-9">
+                <input type="text" name="goal-main" class="form-control" id="main-goal" placeholder="Main Goal">
+              </div>
+            </div>
+           
+            <div class="form-group" id="goal-input">
+              <div class="col-sm-9">
+                <input type="text" name="step-1"class="form-control" id="step-one" placeholder="Step 1">
+              </div>
+            </div>
+            
+            <div class="form-group" id="goal-input">
+              <div class="col-sm-9">
+                 <input type="text" name="step-2" class="form-control" id="step-two" placeholder="Step 2">
+              </div>
+            </div>
+            
+            <div class="form-group" id="goal-input">
+              <div class="col-sm-9">
+                 <input type="text" name="step-3" class="form-control" id="step-three" placeholder="Step 3">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-2 col-sm-10">
+               <button type="submit" class="btn btn-default">Add Weekly Goals</button>
+              </div>
+            </div>
+          </form>
+        </div>
+     </div>
+     
+      <div class="row">
+        <div class="col-md-8 pull-right" id="dailyCheckIn">
+          
+            <h2>Daily Check In</h2> 
+          
+          </div>
+
+        </div>
+     
+      </div>       
 
 </div>
 
 
 
 
-<div class
+
+
 
 
  
@@ -60,7 +118,8 @@
  
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
   <script src="studentpage.js"></script>
 
 </body>
